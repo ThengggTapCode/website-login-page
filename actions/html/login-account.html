@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/login-account.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+        <a href="../../welcome.html">Home</a>
+      <h1>Please enter your Username and Password to continue</h1>
+
+      <div class="user-input">
+        <div class="username">
+          <input
+            type="text"
+            placeholder="Enter your Username"
+            id="inp-username"
+          />
+        </div>
+        <div class="password">
+          <input
+            type="text"
+            placeholder="Enter your Password"
+            id="inp-password"
+          />
+        </div>
+        <button onclick="main()">Submit</button>
+
+        <div id="login-status"></div>
+      </div>
+    </div>
+  </body>
+</html>
