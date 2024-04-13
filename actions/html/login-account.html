@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <style>
+      a:hover {
+        padding: 15px;
+        background-color: #344e41;
+        color: #ece9e0;
+        border-radius: 5px;
+      }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../js/login-account.js"></script>
     <title>Login</title>
   </head>
   <body>
     <div class="container">
-        <a href="../../index.html">Home</a>
+      <a href="../../index.html"><i class='bx bxs-home'></i>Home</a>
       <h1>Please enter your Username and Password to continue</h1>
 
       <div class="user-input">
@@ -20,6 +29,7 @@
             placeholder="Enter your Username"
             id="inp-username"
           />
+          <div id="username-status"></div>
         </div>
         <div class="password">
           <input
@@ -27,9 +37,9 @@
             placeholder="Enter your Password"
             id="inp-password"
           />
+          <div id="password-status"></div>
         </div>
-        <button onclick="main()">Submit</button>
-
+        <button onclick="main()" style="width: 25vw;">Submit</button>
         <div id="login-status"></div>
       </div>
     </div>
